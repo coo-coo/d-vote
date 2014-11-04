@@ -83,7 +83,9 @@
 	<context:component-scan base-package="com.kingstar.ngbf.s.*.rest" />
 	<context:component-scan base-package="com.kingstar.ngbf.u.*.rest" />
 	
+	<!-- 
 	<context:component-scan base-package="com.coo.u.vote.*.rest" />
 	<context:component-scan base-package="com.coo.s.vote.*.rest" />
-	
+	-->
+	<context:component-scan base-package="com.coo.u.vote.rest" />
 </beans>

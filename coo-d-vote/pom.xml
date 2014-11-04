@@ -10,7 +10,7 @@
 	<groupId>com.coo</groupId>
 	<artifactId>coo-d-vote</artifactId>
 	<packaging>maven-plugin</packaging>
-	<version>0.6.0.0</version>
+	<version>0.7.0.0</version>
 	<name>coo-d-vote</name>
 	<description>coo-d-vote</description>
 
@@ -18,13 +18,11 @@
 		<process.class.path>com.coo.d.vote.MainProcess</process.class.path>
 		<!-- Basic NGBF jars -->
 		<ngbf-u-base.version>2.4.0.0</ngbf-u-base.version>
-		<ngbf-s-ntp.version>2.4.0.0</ngbf-s-ntp.version>
+		<ngbf-s-ntp.version>2.4.1.0</ngbf-s-ntp.version>
 
 		<!-- Vote jars -->
-		<coo-s-vote.version>0.6.3.0</coo-s-vote.version>
-		<coo-s-vote-model.version>0.6.4.0</coo-s-vote-model.version>
-		<coo-u-vote-topic.version>0.6.4.0</coo-u-vote-topic.version>
-		<coo-u-vote-robort.version>0.6.3.0</coo-u-vote-robort.version>
+		<coo-s-vote-model.version>0.7.3.0</coo-s-vote-model.version>
+		<coo-u-vote.version>0.7.3.0</coo-u-vote.version>
 
 		<!-- Ad NGBF jars -->
 		<ngbf-s-mongo.version>2.4.0.0</ngbf-s-mongo.version>
@@ -34,8 +32,8 @@
 		<!-- reference Vote -->
 		<dependency>
 			<groupId>com.coo</groupId>
-			<artifactId>coo-s-vote</artifactId>
-			<version>${coo-s-vote.version}</version>
+			<artifactId>coo-u-vote</artifactId>
+			<version>${coo-u-vote.version}</version>
 			<scope>compile</scope>
 			<exclusions>
 				<exclusion>
@@ -61,21 +59,6 @@
 			<groupId>com.coo</groupId>
 			<artifactId>coo-s-vote-model</artifactId>
 			<version>${coo-s-vote-model.version}</version>
-			<scope>compile</scope>
-		</dependency>
-
-		<dependency>
-			<groupId>com.coo</groupId>
-			<artifactId>coo-u-vote-topic</artifactId>
-			<version>${coo-u-vote-topic.version}</version>
-			<scope>compile</scope>
-		</dependency>
-
-
-		<dependency>
-			<groupId>com.coo</groupId>
-			<artifactId>coo-u-vote-robort</artifactId>
-			<version>${coo-u-vote-robort.version}</version>
 			<scope>compile</scope>
 		</dependency>
 		<!-- -->
