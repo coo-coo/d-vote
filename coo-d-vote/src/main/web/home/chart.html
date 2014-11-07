@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<title>COO:图表</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<link href="../assets/common/bootstrap.css" rel="stylesheet">
+<link href="../assets/common/bootstrap.responsive.css" rel="stylesheet">
+<style type="text/css">
+.center{
+		margin-left: auto !important;
+		margin-right: auto !important;
+		float:none !important;
+		display: block;
+		text-align:center;
+}
+</style>
+</head>
+
+<body>
+	<!-- header/bar栏 -->
+	<div class="col-md-12" style="height:60px">
+		<nav id="sys-header-bar" role="navigation"></nav>
+	</div>
+	
+	<!-- content栏 -->
+	<div id="sys-content" class="col-md-11 center">
+		<div class="row">
+			<div class="col-md-4 text-left">
+				<div class="panel panel-primary auto-height">
+				<div class="panel-heading"><span class="glyphicon glyphicon-gift"></span>Coo Vote</div>
+				<div>
+					<canvas id="ngbf_bp_pie" width="300" height="180"></canvas>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4 text-left">
+				<div class="panel panel-primary auto-height">
+				<div class="panel-heading"><span class="glyphicon glyphicon-gift"></span>官方微信</div>
+				<div>
+					<canvas id="ngbf_bp_pie" width="300" height="180"></canvas>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4 text-left">
+				<div class="panel panel-primary auto-height">
+				<div class="panel-heading"><span class="glyphicon glyphicon-gift"></span>Coo Game</div>
+				<div>
+					<canvas id="ngbf_bp_pie" width="300" height="180"></canvas>
+				</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class="row">
+			<div class="col-md-4 text-left">
+				<div class="panel panel-primary auto-height">
+				<div class="panel-heading"><span class="glyphicon glyphicon-gift"></span>Coo Vote</div>
+				<div>
+					<canvas id="ngbf_bp_pie" width="300" height="180"></canvas>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-8 text-left">
+				<div class="panel panel-primary auto-height">
+				<div class="panel-heading"><span class="glyphicon glyphicon-gift"></span>官方微信</div>
+				<div>
+					<canvas id="ngbf_bp_pie" width="300" height="180"></canvas>
+				</div>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+</body>
+
+
+<!-- 在页面底部加载JS，促进页面加载速度 -->
+<!-- jQuery & Bootstrap & Others -->
+<script src="../assets/common/jquery.js"></script>
+<script src="../assets/common/bootstrap.min.js"></script>
+
+<!-- RGraph & Plugin -->
+<script src="../assets/rgraph/RGraph.common.core.js"></script>
+<script src="../assets/rgraph/RGraph.common.dynamic.js"></script>
+<script src="../assets/rgraph/RGraph.common.tooltips.js"></script>
+<script src="../assets/rgraph/RGraph.common.effects.js" ></script>
+<script src="../assets/rgraph/RGraph.common.annotate.js" ></script>
+<script src="../assets/rgraph/RGraph.pie.js"></script>
+<script src="../assets/rgraph/RGraph.bar.js"></script>
+
+<!-- framework -->
+<script src="../coo-web.js"></script>
+<script src="../coo-app.js"></script>
+
+<!-- HTML & JS 分离 -->
+<script src="chart.js"></script>
+
+
+</html>
